@@ -32,7 +32,7 @@ $(EXECDIR)/$(EXEC) : $(OBJ)
 	mkdir -p $(EXECDIR)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-$(SRCDIR)/%.o : $(SRCDIR)%.cpp
+$(SRCDIR)/%.o : $(SRCDIR)%.c
 	$(CC) -o $@ -c $<
 
 clean :          ## Clean all object files
